@@ -11,8 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class ProxyParser:
-    load_dotenv()
-    chromedriver_autoinstaller.install()
 
     def __init__(self, username: str, password: str) -> None:
         self.username: str = username
@@ -87,6 +85,8 @@ class ProxyParser:
 
 
 if __name__ == "__main__":
+    load_dotenv()
+    chromedriver_autoinstaller.install()
     username: str = os.getenv("LOGIN")
     password: str = os.getenv("PASSWORD")
 
