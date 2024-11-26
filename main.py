@@ -2,6 +2,7 @@ import os
 import time
 from typing import Tuple, List
 
+import chromedriver_autoinstaller
 from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -11,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class ProxyParser:
     load_dotenv()
+    chromedriver_autoinstaller.install()
 
     def __init__(self, username: str, password: str) -> None:
         self.username: str = username
