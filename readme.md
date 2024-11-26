@@ -31,7 +31,7 @@
 1. Убедитесь, что Google Chrome и Chrome WebDriver установлены.
 2. Запустите скрипт ProxyParser:
 
-   python proxy_parser.py
+   python main.py
 
 3. Следуйте инструкциям для ручного заполнения капчи, если это необходимо.
 
